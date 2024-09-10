@@ -45,6 +45,24 @@ type ConvertStringType2<T>={
 
 let x: ConvertStringType1<IABC> = {
     a : 'a',
-    b : 1,// erorr vì all là string
+    b : 'b',// erorr vì all là string
     c : 'c'
 }
+
+
+interface Todo{
+    title : string 
+    description ?: string
+}
+
+//yêu cầu các thuộc tính đầy đủ mặc dù có optional
+const todo : Required<Todo> ={
+    title : 'title',
+    description : 'description'
+} 
+
+//Mọi thuộc tính trong partial đều là optional 
+const todo1 : Partial<Todo> ={
+    title : 'title',
+    description : 'description'
+} 
