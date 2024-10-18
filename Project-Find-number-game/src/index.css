@@ -1,0 +1,33 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    @apply border px-4 ;
+  }
+
+  @keyframes fadeAndDisappear {
+    0% {
+      background-color: rgba(255, 0, 0, 0.3); 
+      opacity: 1;
+    }
+    50% {
+      background-color: rgba(255, 0, 0, 0.7);
+      opacity: 1;
+    }
+    100% {
+      background-color: rgba(255, 0, 0, 1);
+      opacity: 0;
+    }
+  }
+  
+  .clicked {
+    animation: fadeAndDisappear 2s ease-in-out forwards; 
+    pointer-events: none;
+  }
