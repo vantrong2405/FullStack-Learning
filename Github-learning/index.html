@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    git branch : Kiểm tra các nhánh
+    git branch + tên đặt : tạo nhánh ( git branch feature/Login nhưng nó không dịch chuyển đến nhánh khác)
+    git checkout -b + tên đặt : tạo nhánh và dịch chuyển đến nhánh đó ( git checkout -b feature/Login và dịch chuyển đến
+    nhánh đó)
+    git checkout + tên : chuyển sang nhánh đó
+    git branch -r : Hiển thị nhánh trên remote
+    git branch -a : Hiển thị tất cả nhánh local + remote
+    git fetch : Fix lỗi máy tính chưa hiển thị kịp vì nó chưa cập nhật -> để cập nhật
+    git branch -m + tên nhánh : Đổi tên nhánh (Phải checkout đúng nhánh đó rùi mới đổi tên)
+    git branch -D + tên nhánh : xóa nhánh ở local
+    git push origin --delete + tên nhánh : Xóa nhánh trên remote
+    git push origin + tên nhánh : push nhánh + code lên
+    git push -u origin + tên nhánh : push nhánh lên chứ không push code
+    git push origin + HEAD : push nhánh + code lên (Head ở đây là đang đứng ở nhánh)
+    git push -u origin + HEAD : push nhánh lên chứ không push code (Head ở đây là đang đứng ở nhánh)
+    git fetch -p : cập nhật lại những branch đã bị xóa
+    Lưu ý : Khi tạo branch trên remote thì dù chúng ta có check ở local thì
+    nó cũng sẽ không thấy , vì vậy phải dùng git fetch
+</body>
+
+</html>
