@@ -1,0 +1,26 @@
+Version: 1.2.0
+Date: 27 July 2021
+=========================== 
+Update: Bootstrap v4.3.1 to Bootstrap v4.6.0
+
+
+Version: 1.1.0
+Date:    18 September 2019
+=========================== 
+Added: One Home Page & My Account Page
+Update: jQuery to latest Version
+Fixed: Minor CSS & Responsive Issue
+Removed: Unused css class form helper.css
+
+Version: 1.0.1
+Date:    03 September 19
+=========================== 
+Update: Bootstrap to Latest Version
+Added: 404 Page
+
+
+Version: 1.0.0
+Date:    12 August 18
+=========================== 
+Initial Release
+
