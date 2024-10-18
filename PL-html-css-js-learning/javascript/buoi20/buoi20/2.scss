@@ -1,0 +1,44 @@
+$maunen: red;
+//viet ham
+@mixin khoisp($mauchu){
+    width: 500px;
+    height: 300px;
+    color: $mauchu;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: $maunen;
+}
+p{
+    background-color: $maunen;
+}
+.khoi{
+    background-color: $maunen;
+}
+.cha{
+    .con1{
+        margin-top: 20px;
+        a{
+            font-size: 30px;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+        .khoi{
+           @include khoisp(aqua);
+            
+        }
+    }
+    .con2{
+        a{
+            font-size: 25px;
+        }
+        .khoi{
+            @include khoisp(brown);
+            
+        }
+    }
+}
+//noi file
+@import 'mobile';

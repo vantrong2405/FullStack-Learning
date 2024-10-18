@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Buoi6.css">
+    <!-- link icon  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .dienthoai {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            transform: translateX(100px) translateY(100px);
+        }
+
+        .dienthoai .vien {
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            position: absolute;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            animation: zoom 1s infinite;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        .dienthoai .nen {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .dienthoai i {
+            font-size: 70px;
+            color: white;
+            position: absolute;
+            z-index: 10;
+            top: 25%;
+            left: 25%;
+            /* transform: translateX(-50%)translateY(-50%); */
+            animation: rung 3s infinite;
+        }
+
+        @keyframes rung {
+            0% {
+                transform: rotate(0);
+            }
+
+            10% {
+                transform: rotate(-10deg);
+            }
+
+            20% {
+                transform: rotate(0);
+            }
+
+            30% {
+                transform: rotate(-10deg);
+            }
+
+            40% {
+                transform: rotate(0);
+            }
+
+            50% {
+                transform: rotate(-10deg);
+            }
+
+            60% {
+                transform: rotate(0);
+            }
+
+            70% {
+                transform: rotate(-10deg);
+            }
+
+            80% {
+                transform: rotate(0);
+            }
+
+            90% {
+                transform: rotate(-10deg);
+            }
+
+            100% {
+                transform: rotate(0);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="Buoi6.css">
+</head>
+
+<body>
+    <div class="dienthoai">
+        <div class="vien"></div>
+        <div class="nen"></div>
+        <i class="fas fa-phone-alt icon"></i>
+    </div>
+
+    <div class="noidung">Khu dan</div>
+    <div class="khoi"></div>
+    <div class="abc"></div>
+
+
+    <div class="hinhtamgiac">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#navigation {
+    width: 100%;
+    height: 46.5px;
+    background-color: black;
+    font-family: 'Golos Text', sans-serif;
+    position: fixed;
+
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    width: 100%;
+
+}
+
+#nav .left .home {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: auto;
+    padding: 14.5px 24px;
+    line-height: 46.5px;
+}
+
+.down {
+    transform: translateY(-3px);
+}
+
+#nav .left a:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+
+#nav i.right {
+    color: white;
+}
+
+#nav .right {
+    padding: 15px 24px;
+}
+
+#nav .right:hover {
+    background-color: rgb(186, 54, 54);
+}
+
+#nav .left .more {
+    position: relative;
+}
+
+.more1 {
+    display: inline-block;
+}
+
+.more1 .more {
+    position: relative;
+
+}
+
+.more1 .menu {
+    width: 160px;
+    height: auto;
+    background-color: white;
+    border: rgb(204, 204, 204) 1px solid;
+    position: absolute;
+    top: 46.5px;
+    visibility: hidden;
+}
+
+.more1:hover .more {
+    background-color: rgb(204, 204, 204);
+}
+
+.more1:hover .menu {
+    visibility: visible;
+}
+
+
+.more1 .menu a {
+    display: block;
+    height: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.image {
+    /* Ảnh nền */
+    /* Fixed cố định background */
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-repeat: no-repeat;
+    animation: anh 10s infinite;
+    background-size: 100% 100%;
+
+}
+
+@keyframes anh {
+    0% {
+        background-image: url(/images/a1.jpg);
+    }
+
+    50% {
+        background-image: url(/images/a2.jpg);
+    }
+
+    100% {
+        background-image: url(/images/a3.jpg);
+    }
+}
+
+.theband {
+    width: 713px;
+    padding: 64px 0;
+    margin: auto;
+    margin-right: auto;
+    height: 530px;
+}
+
+.theband .center {
+    text-align: center;
+}
+
+.theband .t {
+    margin: 10px 0;
+}
+
+.we {
+    color: #878787;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.band h2 {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 300;
+}
+
+.theband .text {
+    margin: 25px 0;
+    font-size: 15px;
+    height: auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+
+.name {
+    height: 206px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    width: 154px;
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+.n {
+    padding: 0 50px;
+}
+
+/* css tour */
+
+.tour {
+    background-color: black;
+    color: white;
+    height: 715px;
+
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.tour .Tou {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.tour .remember {
+    font-size: 15px;
+    font-style: italic;
+    padding: 10px;
+    color: rgb(147, 147, 147);
+}
+
+.date1 .date {
+    background-color: white;
+    width: 766px;
+    height: 128px;
+    color: rgb(117, 117, 148);
+    text-align: left;
+    border: 0.8px white solid;
+    margin: auto;
+
+}
+
+.date .s {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.date .s .Sold {
+    padding: 3px 8px;
+    background-color: rgb(244, 67, 54);
+    margin-left: 16px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.date .circle {
+    padding: 3px 9px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    float: right;
+    margin-right: 10px;
+}
+
+/* css img */
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 32px 8px;
+    margin: 0 -16px;
+    z-index: 1;
+
+
+}
+
+.address .img {
+    margin-left: 8.1px;
+    margin-right: 8.1px;
+    border: while 2px solid;
+    background-color: white;
+    margin-bottom: 16px;
+    height: 389px;
+    width: auto;
+
+
+}
+
+.address .img .chu {
+    padding: 0.15px 16px;
+}
+
+.address .img .chulon {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22.5px;
+    text-size-adjust: 100%;
+    margin: 15px 0;
+}
+
+.address .img .chunho {
+    font-size: 17px;
+    color: black;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.address .img .chu p {
+    font-size: 17px;
+    color: black;
+    margin: 15px 0;
+}
+
+.address .img .chu a.btn {
+    background-color: black;
+    color: white;
+    width: 107px;
+    height: 38px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.address .img .chu a.btn:hover {
+    background-color: #CCCCCC;
+    color: black;
+}
+
+/* background */
+
+.address .img .anh {
+    position: relative;
+}
+
+.address .img .bg {
+    width: 245px;
+    height: 184px;
+    background-color: rgba(0, 0, 0, 0.296);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.address .img .anh:hover .bg {
+    opacity: 1;
+}
+
+/* css contact */
+.contact {
+    width: 770px;
+    padding: 64px 16px;
+    margin: auto;
+}
+
+
+.contact .title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: "Lato", sans-serif;
+    margin: 10px 0px;
+
+}
+
+.contact .text {
+    font-style: italic;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    opacity: 0.4;
+    margin: 15px 0px;
+}
+
+.contact .menu {
+    display: flex;
+    padding: 32px 0;
+}
+
+.contact .menu .right {
+    margin-bottom: 16px;
+    width: 384px;
+}
+
+
+
+.contact .menu .right i {
+    width: 30px;
+
+}
+
+.contact .menu .left {
+    margin-left: 64px;
+}
+
+.phone,
+.map,
+.email {
+    padding: 5px 0 5px 15px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container .hed input {
+    width: 166px;
+    height: 22px;
+}
+
+.container .hed {
+    margin-bottom: 8px;
+    display: flex;
+
+}
+
+.container .hed .input1 {
+    margin-right: 11px;
+}
+
+.container .bd input {
+    width: 366px;
+    height: 22px;
+}
+
+.container .hed .input1,
+.container .hed .input2 {
+    padding: 8px;
+}
+
+.container .bd .input3 {
+    padding: 8px;
+}
+
+.left .container .bd a.btn {
+    background-color: black;
+    color: white;
+    width: 39px;
+    height: 22px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    text-decoration: none;
+    display: block;
+    margin-left: 314px;
+
+}
+
+.left .container .bd a.btn:hover {
+    background-color: #CCCCCC;
+    color: black;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img .img1 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.img .bg {
+    width: 100%;
+    height: 745px;
+    background-color: rgba(0, 0, 0, 0.292);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.end {
+
+    height: 88.5px;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.end .icon {
+    opacity: 0.6;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.end .text {
+    display: flex;
+    justify-content: center;
+
+}
+
+.end .text p {
+    color: rgb(119, 119, 119);
+}
+
+.end .text a {
+    color: rgb(119, 119, 119);
+}

@@ -1,0 +1,66 @@
+.khoi {
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border-radius: 50%;
+    animation: method 1s infinite;
+}
+
+@keyframes method {
+    0% {
+        transform: scale(0.1);
+        background-color: aqua;
+
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: red;
+
+    }
+
+    100% {
+        transform: scale(0.01);
+        background-color: blueviolet;
+
+    }
+}
+
+
+.khoi2 {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    border: red 3px solid;
+    animation: method2 1s infinite;
+}
+
+
+.khoi2 .noidung {
+    padding-top: 60px;
+    animation: method3 1s infinite;
+}
+
+@keyframes method2 {
+    0% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: blue;
+
+    }
+}
+
+@keyframes method3 {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 40px;
+
+    }
+}

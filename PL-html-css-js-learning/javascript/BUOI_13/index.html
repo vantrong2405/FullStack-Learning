@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <style>
+        .khoi{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .khoi.active{
+            transform: translateX(400px);
+            transition: 0.9s;
+        }
+
+        .khoi.dichuyen{
+            transform: translateX(400px);
+            transition: 0.9s;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="btn btn-info nut" data-mk="ku">nut1</div>
+      <div class="btn btn-info nut" data-mk="abc">nut2</div>
+      <div class="btn btn-info nut" data-mk="nut3">nut3</div>
+      <br/>
+      <div class="khoi" id = "abc"></div>
+      <div class="btn btn-primary nut nut4" data-hieuung ="abc">nut4</div>
+
+      
+    <script src="main.js"></script>
+  </body>
+</html>

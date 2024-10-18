@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .khoi {
+            width: 200px;
+            height: 150px;
+            background-color: darkblue;
+        }
+        .dichuyen {
+            animation: abc 2s forwards;
+        }
+        @keyframes abc {
+            from {transform: translateX(0px);}
+            to {transform: translateX(400px); }
+        }
+        .dixuong {
+            animation: xuong 2s forwards;
+        }
+        @keyframes xuong {
+            from {transform: translateX(400px) translateY(0);}
+            to {transform: translateX(400px) translateY(300px);}
+        }
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <button>Click</button>
+    <div class="khoi"></div>
+
+    <script>
+        var nut = document.querySelector('button'),
+            khoi = document.querySelector('.khoi');
+
+        khoi.addEventListener('webkitAnimationEnd', function () {
+            console.log('hieu ứng kết thúc');
+            khoi.classList.add('dixuong');
+        })
+        nut.onclick = function () {
+            khoi.classList.add('dichuyen');
+        }
+
+    </script>
+</body>
+</html>

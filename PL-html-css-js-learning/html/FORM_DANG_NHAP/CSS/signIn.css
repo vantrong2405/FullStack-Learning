@@ -1,0 +1,105 @@
+.html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#dem {
+    width: 350px;
+    height: auto;
+    border: white 2px solid;
+    padding: 10px;
+    background-color: silver;
+    display: inline-block;
+    margin: auto;
+}
+
+#main {
+    width: 350px;
+    height: auto;
+    border: black 2px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    background-color: white;
+
+
+}
+
+
+h4 {
+    color: black;
+    font-weight: 300;
+}
+
+.sign {
+    background-color: red;
+    width: 400px;
+
+
+}
+
+#main .sing {
+    width: 400px;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 15px;
+    margin-left: 20px;
+
+
+}
+
+.pass {
+    margin-top: -30px;
+}
+
+.txt {
+    width: 300px;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 20px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    background-color: rgb(79, 218, 121);
+    color: white;
+    width: 90px;
+    height: 30px;
+    border: white 1px solid;
+    cursor: pointer;
+
+}
+
+
+
+.cham {
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+.icc {
+    width: 360px;
+    text-align: center;
+}
+
+.ic {
+    width: 60px;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: solid 1px black;
+    margin-left: 80vw;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#decision {
+    margin: auto;
+    margin-top: 150px;
+    margin-left: 600px;
+}

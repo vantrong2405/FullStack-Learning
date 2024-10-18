@@ -1,0 +1,58 @@
+h1{
+    color : yellow;
+}
+
+/* 
+background: linear-gradient(90deg,red,blue);// mau lan toa xoay 90 do vuong goc , ket hop mau
+  1) font-weight: bold; //đậm nhất
+  2) display: block;//xuong dong
+  3) text-decoration: none;//bỏ gạch chân
+  4) a:hover{
+   color : violet
+}//rê chuột đổi màu
+  5) Block : 1 dòng
+  6) inline : Nhiều dòng
+  7) border-radius: 10px;//áp tròn
+  8) font-family: Verdana, Geneva, Tahoma, sans-serif; Font chữ nhiều kh
+  9)float : left : căn lề
+*/
+
+body{
+    /* background-color: aquamarine; */
+    /* background: linear-gradient(90deg,red,blue); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,79,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid wheat;
+    width: 200px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 10px;
+    float : left;
+}
+
+a{
+    font-size: 20px;
+    color : white;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover{
+   color : violet;
+   font-weight: bold;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    border-radius: 50%;
+    float : left;
+}

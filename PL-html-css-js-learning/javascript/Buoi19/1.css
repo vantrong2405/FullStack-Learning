@@ -1,0 +1,20 @@
+h1{
+    animation: abc 0.5 forwards;
+}
+
+@keyframes abc{
+    from{opacity: 1;}
+    to{opacity: 0.5;}
+}
+
+.khoi{
+    width: 200px;
+    height: 1250px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.khoi.dichuyen{
+    transform: translateX(300px);
+    
+}

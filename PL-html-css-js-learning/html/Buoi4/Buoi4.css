@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.phan1,
+.phan2,
+.phan3,
+.phan4 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    /* Không lặp lại hình */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.phan1 {
+    background-image: url(/images/1.jpg);
+    /* Ảnh nền */
+    /* Fixed cố định background */
+}
+
+.phan2 {
+    background-image: url(/images/2.jpg);
+    /* Ảnh nền */
+    /* Fixed cố định background */
+    text-align: center;
+    padding-top: 250px;
+    color: white;
+}
+
+.phan3 {
+    background-image: url(/images/3.jpg);
+    /* Ảnh nền */
+    /* Fixed cố định background */
+}
+
+.phan4 {
+    background-image: url(/images/4.jpg);
+    /* Ảnh nền */
+    /* Fixed cố định background */
+    text-align: center;
+    padding-top: 250px;
+    color: white;
+}
+
+
+.phan1 .noidung {
+    width: 70%;
+    height: auto;
+    text-align: right;
+    margin: auto;
+    /* padding-top: 200px; */
+    transform: translateY(250px);
+    /* Âm ở trên , dương xuoonsg dưới , Y theo chiều doc */
+}
+
+.chunho {
+    font-size: 25px;
+}
+
+.chulon {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.phan1 a.nut {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+a.nut:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.phan2 a.nut {
+    background-color: transparent;
+    color: white;
+    border: 2px white solid;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.phan2 a.nut:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.phan3 .noidung {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    transform: translateY(250px);
+}
+
+.phan3 a.nut {
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.phan3 a.nut:hover {
+    background-color: black;
+    color: white;
+}
+
+.phan4 a.nut {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.phan4 a.nut:hover {
+    color: black;
+    background-color: white;
+}
+
+a.mess {
+    font-size: 60px;
+    position: fixed;
+    color: rgb(0, 102, 255);
+    bottom: 20px;
+    right: 30px;
+}

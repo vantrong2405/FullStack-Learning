@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 90%;
+    height: 60px;
+    background-color: #4cd137;
+    padding-left: 10%;
+    display: flex;
+
+}
+
+.phantu {
+    padding: 5px;
+    position: relative;
+    width: 80px;
+    height: auto;
+}
+
+.phantu:hover {
+    background-color: #256e1a;
+}
+
+.phantu a.phantren {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    /* in hoa chữ */
+    text-align: center;
+}
+
+.phantu a.phantren i {
+    font-size: 25px;
+    display: block;
+    padding: 3px;
+}
+
+.phantu .noidung {
+    background-color: #badc58;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    visibility: hidden;
+    /* ẩn */
+    z-index: 10;
+}
+
+.phantu:hover .noidung {
+    visibility: visible;
+    /* hiện hidden */
+}
+
+.noidung a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+
+.noidung a i {
+    margin-right: 3px;
+}
+
+.noidung a:hover {
+    color: white;
+    background-color: green;
+}
+
+.product {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    /* Khoảng cách bên trong */
+}
+
+.product a.one-product {
+    display: block;
+    text-decoration: none;
+
+}
+
+.top {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+}
+
+.top .bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    /* opacity độ mờ */
+    transition: 0.3s;
+}
+
+.top:hover .bg {
+    opacity: 1;
+    /* hiện = 1  */
+}
+
+.top .content {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 17px;
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.top:hover .content {
+    opacity: 1;
+}
+
+.top .add {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 7px 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+    transition: 0.3s;
+}
+
+.top:hover .add {
+    bottom: -99px;
+
+
+}

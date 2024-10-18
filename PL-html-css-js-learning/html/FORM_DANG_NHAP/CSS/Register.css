@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;1,100&family=Shantell+Sans:wght@300&display=swap');
+
+
+
+
+#main {
+    width: 500px;
+    height: auto;
+    border: solid 2px black;
+    background-color: #333f4b;
+    padding-bottom: 15px;
+    color: #7a8188;
+
+}
+
+#main .register {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    color: #7a8188;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-family: 'Gajraj One', cursive;
+}
+
+
+
+#main .text {
+    width: 250px;
+    font-size: 16px;
+}
+
+
+.check {
+    margin-left: 0px;
+}
+
+
+
+.input {
+    width: 250px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #7a8188;
+    color: white;
+    height: 25px;
+    font-size: 15px;
+}
+
+.container {
+    margin-left: 115px;
+}
+
+.btn {
+    background-color: #2ecc71;
+    color: white;
+    width: 250px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.Already {
+    text-align: center;
+}
+
+.a {
+    margin-top: 20px;
+}
+
+.center {
+    margin-bottom: 20px;
+}
+
+.icc {
+    width: 360px;
+    text-align: center;
+}
+
+.ic {
+    width: 60px;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: solid 1px black;
+    margin-left: 80vw;
+    font-size: 30px;
+    margin-top: 100px;
+}

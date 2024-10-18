@@ -1,0 +1,70 @@
+*{
+    margin: 0;padding: 0;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: aliceblue;
+
+}
+.menu{
+    width: 100vw;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.menu .chucnang{
+    float: right;
+    margin-right: 1%;
+}
+.chucnang .phantu{
+    position: relative;
+
+}
+
+.phantu .bieutuong{
+    padding: 0.5rem;
+    background-color: #ebe7e7;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0.2rem;
+
+}
+.bieutuong i{
+    font-size: 1.5rem;
+}
+.phantu .bieutuong:hover{
+    background-color: #c5c0c0;
+}
+
+
+.phantu .noidung{
+   position: absolute;
+   width: 150px;
+   right:0;
+   visibility: hidden;
+}
+.noidung.active{
+    visibility: visible;
+}
+.phantu .noidung a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid gray;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+ 
+}
+
+
+
+.phantu .noidung a:hover{
+    background-color: darkblue;
+    border-radius: 0.3rem;
+    color: white;
+}
+

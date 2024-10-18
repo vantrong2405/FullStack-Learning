@@ -1,0 +1,70 @@
+/* 
+  1)linear-gradient : màu lan tỏa
+  2)overflow: hidden; ân đối tượng ra khỏi cha
+  3)transform: scale(1.3) rotate(15deg); nhich qua phai -> qua trai thi am 
+  4)   background-color: transparent; //trong suốt
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+
+#main {
+    width: 550px;
+    height: auto;
+    border: 3px double brown;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(109, 121, 9, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: auto;
+    margin-top: 150px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Gajraj One', cursive;
+}
+
+.txt {
+    width: 500px;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #eb4d4b;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.khoi {
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.khoi img {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+
+.khoi img:hover {
+    transform: scale(1.3) rotate(-15deg);
+}

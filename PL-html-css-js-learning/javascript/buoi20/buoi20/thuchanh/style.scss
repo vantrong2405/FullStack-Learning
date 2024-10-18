@@ -1,0 +1,85 @@
+// phần 1: định nghĩa các đối tượng co bản trong web (màu chữ, cỡ chữ, màu nền, ...)
+$xanhdam: #2c3e50;
+$mauchu: white;
+$cochumenu: 18px;
+$cochuvua: 15px;
+$cochunho: 13px;
+$kieuchu: "Roboto", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 50px;
+  line-height: 50px;
+  background-color: $xanhdam;
+  color: $mauchu;
+  .trai {
+    .top-language {
+      width: 150px;
+      &:hover {
+        .languages {
+          visibility: visible;
+        }
+      }
+      b.language {
+        cursor: pointer;
+      }
+      .languages {
+        width: 150px;
+        z-index: 6;
+        visibility: hidden;
+        a {
+          display: block;
+          padding: 5px 10px;
+          color: $xanhdam;
+          font-size: $cochunho;
+          line-height: 15px;
+          text-align: center;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $xanhdam;
+            color: $mauchu;
+            font-weight: bold;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+  .phai {
+    .nut {
+      display: inline;
+
+      a.btn {
+        background-color: transparent;
+        text-transform: uppercase;
+        font-family: $kieuchu;
+        font-weight: bold;
+
+        i {
+          padding-right: 7px;
+        }
+        &:hover {
+        }
+      }
+    }
+    .links {
+      display: inline; //nam ngang
+      ul {
+        display: inline;
+        li {
+          display: inline;
+          a {
+            color: $mauchu;
+            font-size: $cochuvua;
+            font-weight: bold;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}

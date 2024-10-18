@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.slidewrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slidewrapper .nutchuyen {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.nutchuyen b {
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+    
+
+}
+
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.one-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+}
+
+.one-slide.active {
+    opacity: 1;
+}
+
+ .anslideNext {
+    animation: anSlN 2s forwards;
+}
+
+@keyframes anSlN {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.hienslideNext {
+    animation: hienSlN 2s forwards;
+}
+
+@keyframes hienSlN {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* anslidePrev {
+    animation: anSlP 2s forwards;
+}
+
+@keyframes anSlP {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+} 
+
+.hienslidePrev {
+    animation: hienSlP 3s forwards;
+}
+
+
+/* @keyframes hienSlP {
+    from {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+} 
+
+ /* hieu ung 4 */
+.anslideNext{
+    animation: anSlN 2s forwards;
+    }
+    @keyframes anSlN{
+        from{ transform: scale(1); opacity: 1;}
+        to{ transform: scale(2); opacity: 0;}
+    }
+    .hienslideNext{
+    animation: hienSlN 3s forwards;
+    }
+    @keyframes hienSlN{
+        from{ transform: scale(0.8); opacity: 0;}
+        to{ transform: scale(1); opacity: 1;}
+    }
+    .anslidePrev{
+    animation: anSlP 2s forwards;
+    }
+    @keyframes anSlP{
+        from{ transform: scale(1); opacity: 1;}
+        to{ transform: scale(0.7); opacity: 0;}
+    }
+    .hienslidePrev{
+    animation: hienSlP 3s forwards;
+    }
+    @keyframes hienSlP{
+        from{ transform: scale(2); opacity: 0;}
+        to{ transform: scale(1); opacity: 1;}
+    } */
+
+    /* hieu ung 5 */
+    .anslideNext{
+        animation: anSlN 2s forwards;
+        }
+        @keyframes anSlN{
+            from{}
+            to{}
+        }
+        .hienslideNext{
+        animation: hienSlN 2s forwards;
+        }
+        @keyframes hienSlN{
+            from{width:0;  opacity: 1;z-index: 2;}
+            to{width: 100%;  opacity: 1; z-index: 2;}
+        }
+        
+        
+        .anslidePrev{
+        animation: anSlP 2s forwards;
+        }
+        @keyframes anSlP{
+            
+            from{  opacity: 1; }
+            to{  opacity: 1; }
+            
+        }
+        .hienslidePrev{
+        animation: hienSlP 2s forwards;
+        }
+        @keyframes hienSlP{
+            from{ height: 0; z-index: 4;  opacity: 1; }
+            to{ z-index: 4;height: 100%; opacity: 1;}
+        }

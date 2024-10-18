@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    width: 90%;
+    height: 60px;
+    background-color: #4CD137;
+    padding-left: 10%;
+    display: flex;
+
+}
+
+#menu .noidung {
+    width: 90px;
+    height: 60px;
+}
+
+.noidung .phiatren {
+    width: 80px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.noidung:hover {
+    background-color: green;
+}
+
+#menu .noidung .phiatren a {
+    width: 90px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+#menu .noidung .phiatren a i {
+    display: block;
+    font-size: 25px;
+    padding: 3px;
+}
+
+.noidung .phiaduoi {
+    width: 200px;
+    height: auto;
+    background-color: #BADC58;
+    visibility: hidden;
+}
+
+.noidung .phiaduoi a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+}
+
+.noidung .phiaduoi i {
+    display: inline-block;
+}
+
+.noidung:hover .phiaduoi {
+    visibility: visible;
+}
+
+#product {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.top {
+    width: 100%;
+    height: 212px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.one-product .top a img {
+    width: 100%;
+    height: 100%;
+}
+
+#product .one-product .top a {
+    text-decoration: none;
+    color: black;
+}
+
+.one-product .top a .bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.208);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.one-product .top:hover .bg {
+    opacity: 1;
+}
+
+.top .content {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 20px;
+    color: white;
+}
+
+.top:hover .content {
+    opacity: 1;
+}
+
+.top .address {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.559);
+    padding: 5px;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.top:hover .address {
+    bottom: -99px;
+}

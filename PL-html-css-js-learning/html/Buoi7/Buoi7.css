@@ -1,0 +1,54 @@
+/* 
+   1) 1em = size cha * 1em
+   2) lay width cua chinh doi tuong no khi dung em
+   3) rem = rem * 16px ( 16px la kihc thuoc doi tuong html ) khong line quan cha (co the thay doi html lai trong html ) 
+*/
+
+.html {
+    font-size: 20px;
+}
+
+.khoi {
+    width: 30rem;
+    height: 200px;
+    border: 2px solid red;
+}
+
+.cha {
+    font-size: 17px;
+}
+
+.con {
+    font-size: 1.2em;
+    /* 1.2 * 17  */
+    width: 2em;
+}
+
+.con a {
+    font-size: 1em;
+    /* 1 * 1.2 * 17 */
+}
+
+.con2 {
+    font-size: 1.2rem;
+}
+
+@media(max-width: 991px) {
+    html {
+        font-size: 15px;
+    }
+
+    .khoi {
+        background-color: blueviolet;
+    }
+}
+
+@media(max-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+
+    .khoi {
+        background-color: blue;
+    }
+}

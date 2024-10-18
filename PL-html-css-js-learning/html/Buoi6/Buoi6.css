@@ -1,0 +1,54 @@
+.noidung {
+    transform: translateY(250px);
+    font-size: 30px;
+}
+
+.noidung::before {
+    content: "Xin chao ";
+}
+
+.noidung::after {
+    content: " ĐÙ";
+}
+
+.khoi {}
+
+.abc {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    transform: translateX(150px);
+    position: relative;
+}
+
+.abc::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 50px solid transparent;
+    border-bottom-color: brown;
+    position: absolute;
+    left: 0;
+    top: -100px;
+}
+
+.hinhtamgiac {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+
+}
+
+.hinhtamgiac::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 100px solid red;
+    border-bottom-color: brown;
+    border-top-color: blue;
+    border-left-color: violet;
+    border-right-color: yellow;
+    position: absolute;
+
+}

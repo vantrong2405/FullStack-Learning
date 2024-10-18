@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300&family=Poppins:ital,wght@0,100;0,200;1,100&family=Shantell+Sans:wght@300&display=swap');
+
+#main {
+    width: 550px;
+    height: auto;
+    border: black 2px double;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 148, 126, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Gajraj One', cursive;
+    margin: auto;
+    margin-top: 150px;
+
+
+}
+
+h1 {
+    color: white;
+}
+
+#main .txt {
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-bottom: white solid 1px;
+
+}
+
+#main .btn {
+    font-size: 18px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#main .btn:hover {
+    background-color: rgb(204, 34, 34);
+    color: white;
+    border-radius: white 2px solid;
+}
+
+.khoi {
+    width: 200px;
+    height: 200px;
+    border: red solid 2px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.khoi img {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+
+}
+
+.khoi img:hover {
+    transform: scale(1.5) rotate(-15deg);
+}
