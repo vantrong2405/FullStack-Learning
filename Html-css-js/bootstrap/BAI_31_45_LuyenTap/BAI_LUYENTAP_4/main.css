@@ -1,0 +1,185 @@
+body {
+  overflow-x: hidden;
+}
+
+
+.list-item-des {
+  background-color: rgb(237, 246, 255) !important;
+}
+
+.list-item-des p {
+  margin-bottom: 0;
+}
+
+.list-item-des p a {
+  color: black;
+  font-weight: 600;
+}
+
+.favorable-bt {
+  margin-bottom: 0;
+}
+
+.favorable-bt li a {
+  color: black;
+}
+
+.list-utilities li {
+  margin-bottom: 15px;
+}
+
+.item-img {
+  text-align: center;
+}
+
+.list-item-noti li a {
+  color: black;
+  font-weight: 600;
+}
+
+.list-information li {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.list-information li a {
+  color: black;
+  font-weight: 700;
+}
+
+.list-subject li a {
+  color: black;
+}
+
+.list-subject li a i {
+  margin-right: 10px;
+}
+
+.list-hv {
+  font-size: 14px;
+
+}
+
+.list-hv li:hover {
+  animation: lamcham forwards 0.3s linear;
+}
+
+.list-hv li a:hover {
+  color: rgb(230, 103, 37);
+}
+
+
+.list-hv li {
+  margin-bottom: 6px;
+}
+
+.list-hv li a {
+  color: white;
+  text-decoration: none;
+}
+
+.bg-hv {
+  background-color: rgb(67, 86, 112);
+  padding-top: 30px;
+}
+
+@keyframes lamcham {
+  from {
+    transform: translateX(0);
+    color: white;
+  }
+
+  to {
+    transform: translateX(7px);
+  }
+}
+
+footer h5 {
+  font-size: 16px;
+}
+
+.bg-hv1 {
+  background-color: rgb(57, 76, 102);
+  padding: 30px;
+}
+
+.bg-hv1 ul li {
+  color: white;
+  font-size: 14px;
+}
+
+.bg-hv1 ul li a {
+  color: rgb(213, 160, 66);
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.bg-hv1 ul li a:hover {
+  text-decoration: none;
+}
+
+.icon-ft span {
+  transition: 0.6s;
+  margin-left: 10px;
+}
+
+.icon-ft span:hover {
+  color: rgb(241, 103, 37);
+  cursor: pointer;
+}
+
+.coloring-picture img:hover {
+  background-color: rgb(241, 103, 37);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.text-list li {
+  font-size: 9px;
+  line-height: 20px;
+}
+
+.floating-icon {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  border: 8px solid rgb(255, 136, 42);
+  font-size: 22px;
+  color: rgb(255, 136, 42);
+
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgb(255, 136, 42);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+
+
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+.small-image {
+  max-height: 50%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" style="border: 1px solid black; font-size: 20px; font-weight: bold;
+    background-color: red; cursor: pointer;">CLick me</button>
+
+    <script>
+        function start() {
+            var btn = document.querySelector("button");
+            var count = 0;
+            btn.addEventListener('click', function () {
+                count += 1;
+            })
+
+            return new Promise((resolve, reject) => {
+                setTimeout(function () {
+                    if (count >= 5) {
+                        resolve('Đây là true');
+                    } else {
+                        reject("Đây là false");
+                    }
+                }, 2000)
+            })
+        }
+
+        start().then(data => alert(data))
+            .catch(err => alert(err));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="myInput">
+        <button>Lấy giá trị ô input</button>
+        <script>
+       
+  // Lấy giá trị ô input bằng cách sử dụng getElementById và thuộc tính value
+
+  var btn = document.querySelector('button');
+  // Xử lý giá trị đã lấy
+   btn.onclick = function(){
+    var inputValue = document.getElementById("myInput").value;
+    ten = "xin chào " + inputValue;
+    document.write(ten);
+   }
+  
+
+    </script>
+        <script src="script.js"></script>
+    </body>
+</html>

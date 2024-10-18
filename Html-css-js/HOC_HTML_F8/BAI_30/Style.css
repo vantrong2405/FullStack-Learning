@@ -1,0 +1,13 @@
+.desc a {
+    color: #f05123;
+    font-weight: 600; /* chữ đậm */
+}
+
+.list strong {
+    color: #f05123;
+}
+
+.copyright a {
+    color: #f05123;
+    font-weight: 600;
+}

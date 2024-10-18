@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const iphones = ['samsungGalaxy', 'iphone13ProMax', 'Nokia816', 'Xiaomi'];
+        Array.prototype.delete = function () {
+            console.log('Delete');
+        }
+
+
+        const user = {
+            vanTrong:{
+                age : '18'
+            },
+            vanAn:{
+                age : '18'
+            },
+            phucNguyen:{
+                age : '18'
+            },
+            tuanNguyen:{
+                age : '18'
+            },
+            
+        }
+        //1. For thường 
+        // for(let i = 0 ; i<iphones.length;i++){
+        //     console.log(iphones[i]);
+        // }
+
+        //2. for each
+        // iphones.forEach((iphone)=> console.log(iphone));
+
+        // 3. for in
+        // for (const index in iphones) {
+        //     console.log(`San pham thu ${Number(index) + 1} la : ${iphones[index]}`);
+        // }
+
+        //4. for of
+        for(const keys of iphones){
+            console.log();
+        }
+    </script>
+</body>
+
+</html>

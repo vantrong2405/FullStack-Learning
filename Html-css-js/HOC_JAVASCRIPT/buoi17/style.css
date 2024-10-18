@@ -1,0 +1,140 @@
+*{
+    margin: 0;padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.slidewraper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slidewraper .nutChuyen ul li{
+    width: 20px;
+    height: 20px;
+    border:  3px solid brown;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 4px;
+}
+.slidewraper .nutChuyen{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+.slidewraper .nutChuyen ul li:hover,.slidewraper .nutChuyen ul li.active{
+    background-color: #000;
+}
+/* css slide  */
+.slidewraper .slides ul {
+    position: relative;
+}
+.slidewraper .slides ul li{
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+.slidewraper .slides ul li.active{
+    visibility: visible;
+}
+.slidewraper .slides ul li .ndslide{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.hinh{
+    width: 100%;
+    height: 100%;
+}
+.slides li.active .tgtren{
+    position: absolute;
+    top: -10%;
+    right: 0;
+    opacity: 0;
+    animation: hientgtren 1s forwards;
+}
+
+@keyframes hientgtren{
+    from{transform: translateX(100%) translateY(-100%); opacity: 0;}
+to{transform: translateX(0) translateY(0); opacity: 0.3;}
+}
+.slides li.active .tgduoi1{
+    position: absolute;
+    top: -30%;
+    left: 0;
+    opacity: 0;
+    animation: hientgduoi1 1s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes hientgduoi1{
+    from{transform: translateX(-100%) translateY(100%); opacity: 0;}
+    to{transform: translateX(0) translateY(0); opacity: 0.3;}
+}
+.slides li.active .tgduoi2{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    animation: hientgduoi2 1s forwards;
+    animation-delay: 1s;
+}
+@keyframes hientgduoi2{
+    from{transform: translateX(-100%) translateY(100%); opacity: 0;}
+    to{transform: translateX(0) translateY(0); opacity: 0.5;}
+}
+.slides .noidung{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: wheat;
+}
+.noidung small{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+}
+.noidung h2{
+    font-size: 80px;
+    font-weight: normal;
+}
+.noidung p{
+    font-size: 20px;
+    width: 60%;
+    margin: 5px 0;
+}
+.noidung .nut{
+    border: 1px solid #fff;
+    width: 25%;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+.noidung .nut:hover{
+    background-color: wheat;
+    color: #000;
+    
+}
+
+ul li.active .noidung h2,
+ul li.active .noidung small,
+ul li.active .noidung p,
+ul li.active .noidung .nut{
+    opacity: 0;
+    animation: hiennd 2s forwards;
+}
+@keyframes hiennd{
+    from{transform: translateX(-30%); opacity: 0;}
+    to{transform: translateX(0); opacity: 1;}
+}
+ul li.active .noidung h2 {animation-delay: 0.8s}
+ul li.active .noidung small{animation-delay: 1s}
+ul li.active .noidung p{animation-delay: 1.2s}
+ul li.active .noidung .nut{animation-delay: 1.4s}

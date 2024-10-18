@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 60px;">Blocking</h1>
+    <a href="#" style="border: 1px solid black; padding: 10px 20px; text-decoration: none; background-color: red; font-weight: bold; color:white; font-size: 20px;">Onclick</a>
+
+    <script>
+         var btn_click = document.querySelector('a');
+         while(i<1000000000000000000){
+                i = i+1;
+            }
+         btn_click.addEventListener('click',function(){
+           
+            console.log("Ok");
+           
+          
+         })
+    </script>
+</body>
+</html>

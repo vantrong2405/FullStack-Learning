@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>F8-Shop</title>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        
+        .box::after{
+            content : attr(data-title);
+        }
+        a::after{
+            content : "("attr(href)")"
+        }
+        .box{
+            width: calcl(80% + 20%);
+            height: 100px;
+            background : rgb(68, 10, 129);
+        }
+    </style>
+  </head>
+
+  <body>
+   <div class ="box" data-title = "Đây là cái box màu tím "></div>
+   <h1>CSS Function</h1>
+   <a href="https://fullstack.edu.vn/">Học lập trình </a>
+  </body>
+
+
+</html>

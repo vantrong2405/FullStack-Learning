@@ -1,0 +1,127 @@
+html {
+   font-size: 62.5%;
+}
+
+
+.nav-account li a {
+   text-decoration: none;
+   color: black;
+   opacity: 0.8;
+   margin-right: 1.5rem;
+}
+
+.nav-account li a:hover {
+   color: rgb(33, 99, 232);
+}
+
+.nav-icon li a {
+   text-decoration: none;
+   color: rgb(89, 93, 105);
+   margin-right: 1.5rem;
+}
+
+.nav-icon li:first-child a {
+   color: rgb(216, 131, 27);
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.nav-menu li:first-child a {
+   color: rgb(33, 99, 232);
+   position: relative;
+}
+
+.nav-menu li a {
+   color: rgb(33, 99, 232);
+}
+
+.nav-menu li:first-child a::before {
+   content: ".";
+   font-size: 5rem;
+   position: absolute;
+   top: -39px;
+   right: 67px;
+}
+
+
+.nav-menu li a {
+   font-size: 1.8rem;
+   color: rgba(0, 0, 0, 0.551);
+   text-decoration: none;
+   font-weight: 700;
+}
+
+.nav-menu li a:hover {
+   color: rgb(33, 99, 232);
+}
+
+.nav-menu li a i {
+   position: relative;
+   top: -2px;
+}
+
+.navbar-menu {
+   display: flex;
+   align-items: center;
+   justify-content: right;
+}
+
+.navbar-menu li {
+   margin-left: 20px;
+   font-size: 2.6rem;
+}
+
+.navbar-menu li a {
+   color: rgba(0, 0, 0, 0.549);
+   font-weight: 100;
+}
+
+
+.logo-status span::before {
+   content: ".";
+   position: absolute;
+   font-size: 7.0rem;
+   top: -251%;
+   left: 0.3%;
+}
+
+.main-picture-block {
+   overflow: hidden;
+}
+
+.main-picture-block:hover .bg-picture {
+   transform: scale(1.05);
+   /* Thay đổi tỷ lệ phóng to ảnh khi hover */
+   transition: transform 1s ease;
+   /* Thời gian và kiểu chuyển tiếp */
+}
+
+.main-picture-block:hover .title-heading {
+   text-decoration: underline;
+}
+
+.user-information{
+   font-size: 1.4rem;
+    color:white;
+}
+
+.user-information .name-use{
+   color:white;
+   text-decoration: none;
+}
+
+.user-information .name-use:hover{
+   text-decoration: underline;
+}
+
+.address-month::before{
+   content : ".";
+   position: absolute;
+   font-size: 6rem;
+   top:-55px;
+   left: -5px;
+}

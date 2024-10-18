@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+}
+
+:root {
+   --red: #FF3838;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+header {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   z-index: 1000;
+   display: flex !important;
+   align-items: center;
+   justify-content: space-between;
+   background: rgb(255, 255, 255);
+   padding: 2rem 9%;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+
+
+}
+
+header .logo a {
+   font-size: 2.2rem;
+   color: Rgb(102, 102, 102);
+   font-weight: bold;
+}
+
+header .logo a i {
+   color: var(--red);
+   font-weight: bold;
+   font-size: 2.5rem;
+}
+
+header .navbar a {
+   font-size: 2rem;
+   color: Rgb(102, 102, 102);
+}
+
+/* section */
+section {
+   padding: 2rem 9%;
+   margin-top: 9rem;
+   float: right;
+}
+
+.home {
+   z-index: 1000;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   min-height: 100vh;
+   align-items: center;
+   background: url(./images/home-bg.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+
+}

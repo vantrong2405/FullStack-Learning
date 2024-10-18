@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+           
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .card {
+            width: 100%;
+            text-align: center;
+            flex-basis: 48%;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .card__list{
+            width: 70%;
+            height: 100%;
+            padding: 40px 0;
+            border: 2px solid rgba(128, 128, 128, 0.323);
+        }
+
+
+
+        .card__title--primary {
+            color: blue
+        }
+
+        .card__description {
+            width: 90%;
+            text-align: justify;
+            margin: auto;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            border-radius: 15px;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.7;
+        }
+
+        .btn-primary {
+            background-color: blue;
+
+        }
+
+        .card__title--secondary {
+            color: red;
+        }
+
+        .btn-secondary {
+            background-color: red;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        /* js */
+        .card__title--primary.changecolor{
+            color:red;
+        }
+
+        .card__title--primary.changefont{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="card__list">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8UaO8zvh5DjMIZ3C-jUQyIdtnCH9VUBvPRCZIbf60YQ&s"
+                    alt="" class="card__image">
+                <div class="card__title card__title--primary mt-10">Tiêu đề </div>
+                <div class="card__description mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                    sint!
+                    Assumenda vel, similique veritatis distinctio facere voluptas dolore ipsam est itaque, ratione
+                    impedit
+                    aliquid? Veniam maxime minima hic excepturi repellat?</div>
+                <button class="btn btn-primary mt-10">Nút 1 </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__list">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8UaO8zvh5DjMIZ3C-jUQyIdtnCH9VUBvPRCZIbf60YQ&s"
+                    alt="" class="card__image ">
+                <div class="card__title card__title--secondary mt-10">Tiêu đề </div>
+                <div class="card__description mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                    sint!
+                    Assumenda vel, similique veritatis distinctio facere voluptas dolore ipsam est itaque, ratione
+                    impedit
+                    aliquid? Veniam maxime minima hic excepturi repellat?</div>
+                <button class="btn btn-secondary mt-10">Nút 1 </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
