@@ -9,18 +9,35 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "add": "^2.0.6",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dropdown-menu": "^0.1.1",
+    "lucide": "^0.456.0",
+    "lucide-react": "^0.456.0",
+    "next": "14.2.15",
+    "next-themes": "^0.4.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.15"
+    "shadcn": "^2.1.6",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/config-array": "^0.19.0",
+    "@eslint/object-schema": "^2.1.4",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "latest",
+    "eslint-config-next": "14.2.15",
+    "glob": "latest",
     "postcss": "^8",
+    "rimraf": "latest",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15"
-  }
+    "typescript": "^5"
+  },
+  "packageManager": "yarn@3.6.1+sha512.de524adec81a6c3d7a26d936d439d2832e351cdfc5728f9d91f3fc85dd20b04391c038e9b4ecab11cae2b0dd9f0d55fd355af766bc5c1a7f8d25d96bb2a0b2ca"
 }
