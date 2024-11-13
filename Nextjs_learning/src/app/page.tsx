@@ -10,10 +10,7 @@ export default function Home() {
   // }
   return (
     <div>
-      <ModeToggle />
       Home page
-      <Link href={'/login'} className="px-4 py-2 bg-red-300 block w-28">Logins</Link>
-      <Link href={'/register'} className="px-4 py-2 bg-blue-300 block w-28">Registers</Link>
     </div>
   );
 }
